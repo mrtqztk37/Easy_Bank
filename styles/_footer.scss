@@ -1,0 +1,95 @@
+.footer {
+  background: $darkBlue;
+  height: 250px;
+  @include breakpoint-down(medium) {
+    display: block;
+    height: 480px;
+
+    margin-top: 150px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 250px;
+  margin-bottom: 0;
+  margin: auto;
+  color: $white;
+  @include breakpoint-down(medium) {
+    display: block;
+    margin: auto;
+    padding: 20px;
+  }
+}
+.footer__logo img {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 30px;
+  background: white;
+  width: 200px;
+  cursor: pointer;
+  @include breakpoint-down(medium) {
+    display: flex;
+    width: 60%;
+    padding: 10px;
+  }
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  @include breakpoint-down(medium) {
+    display: flex;
+
+    height: 60px;
+    width: 60%;
+  }
+}
+ul li {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+ul li:hover {
+  font-size: large;
+  transform: scale(1.03);
+}
+.footer__about a {
+  display: flex;
+  margin-bottom: 15px;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.footer__about a:hover {
+  color: white;
+  text-decoration: underline;
+  font-size: larger;
+}
+.footer__careers {
+  @include breakpoint-down(medium) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+.footer__careers a {
+  display: flex;
+  margin-bottom: 15px;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.footer__careers a:hover {
+  color: white;
+  text-decoration: underline;
+  font-size: larger;
+}
+.footer__button {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.footer__button span {
+  color: $lightGrayishBlue;
+  font-size: x-small;
+}

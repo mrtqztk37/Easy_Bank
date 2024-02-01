@@ -1,0 +1,78 @@
+.feature{
+    @include breakpoint-up(xlarge){
+        background: $veryLightGray;
+    }
+    @include breakpoint-down(medium){
+        margin-bottom: 50px;
+        
+    }
+  text-align: center;
+ 
+  margin: 0 auto;
+  color: $grayishBlue;
+}
+.feature__grid{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 80px;
+    @include breakpoint-down(medium){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        .feature__item{
+            
+            margin-inline: 50px;
+            margin-top: 20px;
+           cursor: pointer;
+           transition: ease-in-out 500ms;
+        }
+    }
+    @include breakpoint-up(large){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .feature__item{
+            margin-top: 20px;
+            margin-inline: 50px;
+        }
+      
+    }
+    @include breakpoint-up(medium){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .feature__item{
+            margin-top: 20px;
+            margin-inline: 50px;
+        }
+
+    }
+    @include breakpoint-up(xlarge){
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-inline: 150px;
+        
+        
+    }
+}
+.feature__intro{
+    @include breakpoint-up(xlarge){
+       
+        margin-inline: 150px;
+        
+    }
+    @include breakpoint-down(medium){
+        margin-inline:50px;
+    }
+}
+.feature__item{
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+    margin-left: 15px;
+    &:hover{
+       
+        transform: scale(1.04);
+    }
+}
+.feature__title{
+    color: black;
+}
